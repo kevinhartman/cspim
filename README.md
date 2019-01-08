@@ -1,9 +1,24 @@
-[This is Markdown format; README.html is auto-generated from this file.]
+## MIPS Simulator / Interpreter (bi-endian)
+This is a fork of [@zvrba](https://github.com/zvrba)'s MIPS simulator (no longer maintained), which was originally designed as a proof of concept for the publiciation linked below. The original project aims to simulate only the MIPS little endian ISA (with support for encrypted executables).
+
+Here, I've added support for big endian MIPS, with the exception of the encryption technique described in the publication. The goal is to provide a general purpose big (and little!) endian MIPS simulator, which can easily be used as a library.
+
+As originally put by Željko, the design goals of this simulator are to provide:
+
+- **A library interface**, so that all aspects can be easily controlled from the host application.
+- The ability to run in freestanding environment (i.e. an environment **without the standard C library**).
+
+With its library oriented design, **this simulator is ideal for use as an interpreter core** for higher-level emulators (ie. a Nintendo 64 emulator).
+
+The contents of the original README are below, but have been updated to reflect the changes introduced in the support of big endian MIPS, and will be kept in sync with future changes.
+
+-[@kevinhartman](https://github.com/kevinhartman)
+
 
 The CSPIM MIPS simulator
 ========================
 More details about this project can be found
-[here.](http://zvrba.net/software/cspim.html) Detailed description of CSPIM
+[here.](http://zvrba.net/articles/encrypted-execution.html) Detailed description of CSPIM
 internals as well as the motivation and possible use cases can be found in the
 following publication:
 
