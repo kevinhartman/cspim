@@ -1,4 +1,4 @@
-## MIPS Simulator / Interpreter (bi-endian)
+## MIPS I Simulator / Interpreter (bi-endian)
 This is a fork of [@zvrba](https://github.com/zvrba)'s MIPS simulator (no longer maintained), which was originally designed as a proof of concept for the publiciation linked below. The original project aims to simulate only the MIPS little endian ISA (with support for encrypted executables).
 
 Here, I've added support for big endian MIPS, with the exception of the encryption technique described in the publication. The goal is to provide a general purpose big (and little!) endian MIPS simulator, which can easily be used as a library.
@@ -8,7 +8,7 @@ As originally put by Željko, the design goals of this simulator are to provide:
 - **A library interface**, so that all aspects can be easily controlled from the host application.
 - The ability to run in freestanding environment (i.e. an environment **without the standard C library**).
 
-With its library oriented design, **this simulator is ideal for use as an interpreter core** for higher-level emulators (ie. a Nintendo 64 emulator).
+With its library oriented design, **this simulator is ideal for use as an interpreter core** for higher-level emulators (ie. a Nintendo 64 emulator, if N64 was MIPS I and not MIPS III ;) ).
 
 The contents of the original README are below, but have been updated to reflect the changes introduced in the support of big endian MIPS, and will be kept in sync with future changes.
 
